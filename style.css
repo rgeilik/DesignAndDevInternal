@@ -1,0 +1,60 @@
+/* Website should be viewed in fullscreen mode to let CSS render properly */
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+body {  
+height: 125vh;  
+margin-top: 80px;  
+padding: 30px;  
+background-size: cover;  
+font-family: sans-serif;  
+}  
+
+/* -------------NAVIGATION BAR-------------- */
+.navigation {  
+background-color: #485484;  
+position: fixed;  
+left: 0;  
+right: 0;  
+top: 5px;  
+height: 60px;  
+display: flex;  
+align-items: center;  
+box-shadow: 0 0 25px 0 black;  
+} 
+
+
+.navigation * {  
+display: inline;  
+} 
+
+
+.navigation li {  
+margin: 20px;  
+} 
+
+
+.navigation li a {  
+color: blue;  
+text-decoration: none;  
+}  
+
+.navigation a:link {
+
+color: white;
+-webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;  
+}
+
+.navigation a:hover {
+color: grey;
+  
+}
