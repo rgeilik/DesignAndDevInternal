@@ -15,6 +15,11 @@ background-size: cover;
 font-family: sans-serif;  
 }  
 
+.header-img {
+
+  background-image: url(/Resources/InternalHeader.img);
+}
+
 /* -------------NAVIGATION BAR-------------- */
 .navigation {  
 background-color: #485484;  
@@ -26,6 +31,8 @@ height: 60px;
 display: flex;  
 align-items: center;  
 box-shadow: 0 0 25px 0 black;  
+  margin-top: 1px;
+  margin-bottom: 1px;
 } 
 
 
@@ -57,4 +64,9 @@ color: white;
 .navigation a:hover {
 color: grey;
   
+}
+
+hr {
+
+  margin-top: 0px;
 }
