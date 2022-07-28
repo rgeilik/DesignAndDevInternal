@@ -9,20 +9,25 @@ html, body {
 
 body {  
 height: 125vh;  
-margin-top: 80px;  
-padding: 30px;  
-background-size: cover;  
+margin-top: 80px;    
 font-family: sans-serif;  
+  padding: 25px;
+  background: url(InternalHeader.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;;
 }  
 
 .header-img {
-
-  background-image: url(/Resources/InternalHeader.img);
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
 }
 
+
+
 /* -------------NAVIGATION BAR-------------- */
-.navigation {  
-background-color: #485484;  
+#navigation {  
 position: fixed;  
 left: 0;  
 right: 0;  
@@ -31,27 +36,32 @@ height: 60px;
 display: flex;  
 align-items: center;  
 box-shadow: 0 0 25px 0 black;  
-  margin-top: 1px;
+  margin-top: 4px;
   margin-bottom: 1px;
+
+top: -20px; /* Hide the navbar 50 px outside of the top view */
+width: 100%; /* Full width */
+transition: top 0.3s; /* Transition effect when sliding down (and up) */
 } 
 
 
-.navigation * {  
+#navigation * {  
 display: inline;  
+
 } 
 
 
-.navigation li {  
+#navigation li {  
 margin: 20px;  
 } 
 
 
-.navigation li a {  
+#navigation li a {  
 color: blue;  
 text-decoration: none;  
 }  
 
-.navigation a:link {
+#navigation a:link {
 
 color: white;
 -webkit-transition: color 1s;
@@ -61,7 +71,7 @@ color: white;
     transition:         color 1s;  
 }
 
-.navigation a:hover {
+#navigation a:hover {
 color: grey;
   
 }
